@@ -1,8 +1,6 @@
 <?php require_once 'includes/conexion.php'; ?>
 <?php require_once 'includes/helpers.php'; ?>
 
-
-
 <!-- INCLUIMOS LA CABECERA -->
 <?php require_once 'includes/cabecera.php';?>
     

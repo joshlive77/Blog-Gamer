@@ -1,8 +1,8 @@
 /* FUENTES */
 
 @font-face{
-    font-family: "fajala";
-    src: url(../fonts/fuente.ttf) format('truetype');
+    font-family: "Quicksand-Regular";
+    src: url(../font/Quicksand-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
     /* todos los margenes se vuelven 0 */
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif, Helvetica, Arial;
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
 }
 
@@ -70,7 +70,7 @@ body{
 
 /* estilo para la etiqueta a del logo */
 #logo a{
-    font-family: "fajala", Helvetica;
+    /* font-family: "fajala", Helvetica; */
     font-size: 40px;
     /* espacio entre letras */
     letter-spacing: 2px;
@@ -250,7 +250,7 @@ input[type="submit"],
     color: #444;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px #ccc;
-    font-family: "fajala";
+    /* font-family: "fajala"; */
 }
 
 #principal h2{
@@ -258,7 +258,7 @@ input[type="submit"],
     color: #2979cd;
     text-shadow: 1px 1px 2px #ccc;
     letter-spacing: 1px;
-    font-family: "fajala";
+    /* font-family: "fajala"; */
     margin-top: 25px;
 }
 

@@ -15,7 +15,7 @@
     <!-- CABECERA -->
     <header id="cabecera">
         <div id="logo">
-            <a href="index php">
+            <a href="index.php">
                 Blog de videojuegos
                 
             </a>
@@ -46,8 +46,10 @@
                         endwhile;
                     endif; 
                 ?>
-                <li><a href="index.php">Sobre mi</a></li>
-                <li><a href="index.php">Contacto</a></li>
+                <?php if(isset($_SESSION['usuario'])): ?>
+                <li><a href="mis_entradas.php">Mis entradas</a></li>
+                <?php endif; ?>
+                <!-- <li><a href="index.php">Contacto</a></li> -->
             </ul>
         </nav>
         <!-- para limpiar los flotados y los elementos de abajo no se mezclen con los de arriba -->

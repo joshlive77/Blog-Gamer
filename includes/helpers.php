@@ -58,8 +58,25 @@
         return $resultado;
     }
 
+    function conguirMisEntradas($db, $user_id){
+        if(!empty($user_id)){
+            
+        $sql = "SELECT e.*, c.nombre as 'categoria' FROM entradas e ";
+        $sql .= "INNER JOIN categorias c ON e.categoria_id = c.id ";
+        $sql .= "where usuario_id = $user_id";
+        };
+        // $sql .= "order by id desc";
+        $entradas = mysqli_query($db, $sql);
+        $resultado = false;
+        if ($entradas && mysqli_num_rows($entradas) >= 1) {
+            return $entradas;
+        }
+        return $resultado;
+    }
+
     function conseguirEntradas($db, $limit = null, $categoria = null, $busqueda = null){
         $sql = "SELECT e.*, c.nombre as 'categoria' FROM entradas e INNER JOIN categorias c ON e.categoria_id = c.id ";
+        // select e.*, c.nombre as 'categoria' from entradas e inner join categorias c on 
         
         if(!empty($categoria)){
             $sql .= "where e.categoria_id = $categoria";
